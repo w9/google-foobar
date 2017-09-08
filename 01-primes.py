@@ -7,8 +7,7 @@ def primes_iter():
     for n in count(2):
         if not any([n % x == 0 for x in primes if x <= sqrt(n)]):
             primes.append(n)
-            for c in str(n):
-                yield c
+            yield from str(n)
 
 
 def answer(n):
