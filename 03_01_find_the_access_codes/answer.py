@@ -1,21 +1,19 @@
-from itertools import starmap, repeat
-from operator import mul
+from itertools import repeat
 from functools import partial
 
 
 def transition(m, a):
     """ Matrix-vector multiplication.
     """
-    return [sum(starmap(mul, zip(r, a))) for r in m]
+    return [sum([a[i] for i in r]) for r in m]
 
 
 def get_trans_mat(l):
     """ *Divisible and preceeding in list* is a partial order.
     This function gives the transition matrix of the corresponding DAG,
-    with its upper-half (and diagnal) omitted.
+    in a sparse format.
     """
-    return [[1 if i < j and l[j] % l[i] == 0 else 0
-             for i in range(j)]
+    return [[i for i in range(j) if i < j and l[j] % l[i] == 0]
             for j in range(len(l))]
 
 

@@ -1,0 +1,36 @@
+> answer(range(1,2001))
+40888
+0.242383003235
+
+> answer([2**x for x in range(1,32) for y in range(60)])
+1177805440
+0.370677947998
+
+> answer(list(repeat(1, 2000)))
+1331334000
+0.394935131073
+
+> answer(sorted([randint(1, 10) for x in range(2000)]))
+209749834
+0.274264812469
+
+> answer(sorted([randint(1, 100) for x in range(2000)]))
+8578440
+0.20041680336
+
+> answer(sorted([randint(1, 999999) for x in range(2000)]))
+1
+0.179691076279
+
+> answer(sorted([randint(1, 10) for x in range(5000)]))
+3319336209
+1.75416207314
+
+> answer(sorted([randint(1, 100) for x in range(5000)]))
+128708072
+1.33745718002
+
+> answer(sorted([randint(1, 999999) for x in range(5000)]))
+32
+1.15819096565
+
