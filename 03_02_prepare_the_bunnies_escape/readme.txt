@@ -1,4 +1,5 @@
-Prepare the Bunnies' Escape ===========================
+Prepare the Bunnies' Escape
+===========================
 
 You're awfully close to destroying the LAMBCHOP doomsday device and freeing
 Commander Lambda's bunny prisoners, but once they're free of the prison blocks,
@@ -27,7 +28,8 @@ may or may not need to remove a wall. The height and width of the map can be
 from 2 to 20. Moves can only be made in cardinal directions; no diagonal moves
 are allowed.
 
-Languages =========
+Languages
+=========
 
 To provide a Python solution, edit solution.py
 To provide a Java solution, edit solution.java
